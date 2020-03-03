@@ -8,12 +8,8 @@ $(document).ready(function(){
             color: "blue",
         },1000,function(){
             $('.main-titulo').animate({
-                color: "pink",
-            },1000,function(){
-                $('.main-titulo').animate({
-                    color: "yellow"
-                },1000)
-            })
+                color: "yellow",
+            },1000)
         })
     }
     )
