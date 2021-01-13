@@ -1,5 +1,7 @@
-$(function(){
-console.log('prueba');
-//$("body").find("#cubo1").replaceWith("<div id='cubo1'><p>este es un parrafo de prueba</p></div>");
-//$("#cubo1").append("<imp src=''>");
-});
+function numerosAleatorios(){
+    var numero= Math.floor(Math.random() * 10);
+    document.getElementById("cubo1").innerHTML=+numero;
+    console.log(numero);
+    document.getElementById("cubo2").innerHTML = Math.floor(Math.random() * 10);
+    document.getElementById("cubo3").innerHTML = "el texto";
+}
