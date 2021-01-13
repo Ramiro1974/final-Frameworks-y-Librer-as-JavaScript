@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
     //window.alert('estoy funcionando');
     $('.main-titulo').animate({
@@ -13,4 +12,6 @@ $(document).ready(function(){
         })
     }
     )
+    //cambio de color titulo
+
 });
