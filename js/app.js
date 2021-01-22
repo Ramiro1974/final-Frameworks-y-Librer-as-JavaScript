@@ -1,17 +1,15 @@
+/** 
 $(document).ready(function(){
-    //window.alert('estoy funcionando');
-    $('.main-titulo').animate({
-        color: "green",
-    },1000,function(){
-        $('.main-titulo').animate({
-            color: "blue",
-        },1000,function(){
-            $('.main-titulo').animate({
-                color: "yellow",
-            },1000)
-        })
-    }
-    )
-    //cambio de color titulo
-
+    var cli='';
+    $("img").click(function(){
+        cli=$("img").html();
+        console.log("el dulce es: "+cli);
+     });
+     console.log("el tiempo es: "+$("data-info").html());
+});
+*/
+$(document).ready(function(){
+    $(".main-titulo").click(function(){
+        alert($(".main-titulo").html());
+    });
 });
