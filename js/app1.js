@@ -20,3 +20,8 @@ $(function(){
         }  
     }
 });
+$(document).ready(function(){
+    $(".main-titulo").click(function(){
+        alert($(".main-titulo").html());
+    });
+});
