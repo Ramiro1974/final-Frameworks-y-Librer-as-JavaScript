@@ -1,4 +1,4 @@
-/** 
+/**  
 $(document).ready(function(){
     var cli='';
     $("img").click(function(){
@@ -8,48 +8,36 @@ $(document).ready(function(){
      console.log("el tiempo es: "+$("data-info").html());
 });
 */
-var igual=[];
-$(document).ready(function(){
+/**$(document).ready(function(){
     var consulta;
+    var col;
     $("img").click(function(){
-        consulta= $(this)
-        eventoDulce(consulta);
+    //consulta= $(this)
+    eventoDulce(consulta, col);
         
     });
-});
-function eventoDulce(cosa){
-    var temp=cosa; 
-    const temp={
+});*/
+var igual=[];
 
-    }
+function eventoDulce(cosa, col){
+    //alert(cosa);
+    //alert(col);
+    var temp=cosa;
     igual.push(temp);
     var contadosCondicion=igual.length;
-    if(contadosCondicion != 0 && contadosCondicion >= 2){
-        if(igual[0]===igual[1]){
-            alert("igual");
+    if(contadosCondicion != 0 && contadosCondicion < 4){
+        if(igual[0]===igual[1]===igual[3]){
+            ;
         }else{
             alert("diferente");
         }
     }else{
-        alert("se encuentra null");        
+        igual.splice(0,3);
+        igual.pop();
+        //alert("*** condicion no cumple ****");        
     } 
-    for(var i=0 ; i< igual.length ; i++){
-        console.log("el elemento es: "+igual[i])+"\n";
-    }
-    
+    igual.forEach(function(contenido){
+        console.log(contenido);
+    });
+    console.log(igual.length);
 }
-
-/**
-$(function(){
-    $(".dulces").click(function(){
-        var consulta= $("img").attr("src");
-        console.log("la movimiento es: "+consulta);
-    });
-
-    $(".panel-tablero").click(function(){
-        var consulta2= $("img").attr("src");
-        console.log("la movimiento es 2: "+consulta2);
-    });
- 
-});*/
-

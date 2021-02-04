@@ -1,7 +1,8 @@
-$(function(){
+$(function(){ 
     var z=0;
     var colum=0;
     var dulce=1;
+    var div=" ' ";
 
 /**    for(var i=1;i<7;i++ ){
     for(var h=1;h<8;h++){
@@ -13,15 +14,10 @@ $(function(){
 } */
     for(var i=1;i<7;i++ ){
         for(var h=1;h<8;h++){
-            dulce= Math.floor(Math.random() * (5 - 1) ) + 1;
-            z='<img src="image/'+dulce+'.png" class="dulces" >';
+            dulce= Math.floor(Math.random() * (5 - 1) ) + 1;            
             colum=".col-"+h;
+            z='<img src="image/'+dulce+'.png" class="dulces" onclick="eventoDulce('+div+dulce+div+','+div+colum+div+')">';
             $(colum).append(z);
         }  
     }
-});
-$(document).ready(function(){
-    $(".main-titulo").click(function(){
-        alert($(".main-titulo").html());
-    });
 });
