@@ -27,7 +27,7 @@ function eventoDulce(cosa, col){
     var contadosCondicion=igual.length;
     if(contadosCondicion != 0 && contadosCondicion < 4){
         if(igual[0]===igual[1]===igual[3]){
-            ;
+            $("img").removeAttr("");
         }else{
             alert("diferente");
         }
