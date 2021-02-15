@@ -1,35 +1,27 @@
-/**  
-$(document).ready(function(){
-    var cli='';
-    $("img").click(function(){
-        cli=$("img").html();
-        console.log("el dulce es: "+cli);
-     });
-     console.log("el tiempo es: "+$("data-info").html());
-});
-*/
-/**$(document).ready(function(){
-    var consulta;
-    var col;
-    $("img").click(function(){
-    //consulta= $(this)
-    eventoDulce(consulta, col);
-        
-    });
-});*/
+
+var col;
 var igual=[];
 
+$(".panel-tablero").sortable();
+
+$(document).ready(function(){
+    var consulta;
+    $("img").click(function(){
+    consulta= $(this);
+    });
+    console.log(consulta);
+});
+
 function eventoDulce(cosa, col){
-    //alert(cosa);
-    //alert(col);
+    
     var temp=cosa;
     igual.push(temp);
     var contadosCondicion=igual.length;
     if(contadosCondicion != 0 && contadosCondicion < 4){
         if(igual[0]===igual[1]===igual[3]){
-            $("img").removeAttr("");
+
         }else{
-            alert("diferente");
+            console.log("diferente");
         }
     }else{
         igual.splice(0,3);
