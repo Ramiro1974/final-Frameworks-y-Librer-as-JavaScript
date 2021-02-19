@@ -1,1 +1,9 @@
 https://www.youtube.com/watch?v=XD5sZWxwJUk
+
+    $(".panel-tablero").html(function(){
+            for(var h=1;h<25;h++){
+                dulce= Math.floor(Math.random() * (5 - 1) ) + 1;
+                z='<img src="image/'+dulce+'.png" class="dulces" onclick="eventoDulce('+coma+dulce+coma+')" style="margin:6px;">';
+                $(this).append(z);
+            }
+    });

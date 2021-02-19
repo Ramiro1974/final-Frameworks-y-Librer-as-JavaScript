@@ -2,7 +2,7 @@
 var col;
 var igual=[];
 
-$(".panel-tablero").sortable();
+$("#dulcess").sortable();
 
 $(document).ready(function(){
     var consulta;
