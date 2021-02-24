@@ -1,28 +1,23 @@
-$(document).ready(function(){
-    //window.alert('estoy funcionando');
-    
+$(function color1() {
     $('.main-titulo').animate({
         color: "green",
-    },1000,function(){
+    }, 1000, function() {
+        color2();
+    });
+
+    function color2() {
         $('.main-titulo').animate({
             color: "blue",
-        },1000,function(){
-            $('.main-titulo').animate({
-                color: "pruple",
-            },1000)
-        })
-    } 
-    )
-    //cambio de color titulo
+        }, 1000, function() {
+            color3();
+        });
+    }
 
-       
+    function color2() {
+        $('.main-titulo').animate({
+            color: "pruple",
+        }, 1000, function() {
+            color1();
+        });
+    }
 });
-$(function clor1(){
-    $('.main-titulo').animate({ color: "PowderBlue", },100) 
-});
-$(function color2(){
-    
-            $('.main-titulo').animate({ color: "white", },100);
-
-        //console.log("estoy entrando color");
-    });
