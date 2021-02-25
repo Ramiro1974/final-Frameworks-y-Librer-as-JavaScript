@@ -3,7 +3,7 @@ var dulceslleno = [];
 var colum = 0;
 const dulces = ['image/1.png', 'image/2.png', 'image/3.png', 'image/4.png'];
 const coma = " ' ";
-const cssDulce = 'style="margin-bottom: 15px;"';
+const cssDulce = 'style="margin-bottom: 15px; width: 100%;"';
 $(function() {
     var id = 1;
     for (var n = 1; n < 8; n++) {
