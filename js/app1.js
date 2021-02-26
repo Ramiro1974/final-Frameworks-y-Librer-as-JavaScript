@@ -25,13 +25,17 @@ $(".btn-reinicio").click(function() {
         duration: '2m',
         format: '%M:%S',
         callback: function() {
-            alert('Time up!');
+            cambioPantalla();
+            //alert('Time up!');
             $('#timer').timer('reset');
         }
     });
 });
 
-
+function cambioPantalla() {
+    $(".panel-score").attr("display", "none");
+    alert('Time up!');
+}
 
 
 
@@ -276,7 +280,8 @@ function destruirCombos() {
         for (var c = 0; c < colum; c++)
             if (dulceslleno[r][c].isInCombo) {
                 isCombo = true;
-                reponer() // aca funciona bien 
+                //dulceslleno[r][c].animate({ slideDown(500) }, 1000);
+                reponer()
             }
 
     if (isCombo)
@@ -293,8 +298,8 @@ function desaparecerCombos() {
         for (var c = 0; c < colum; c++) {
             if (dulceslleno[r][c].isInCombo) {
                 dulceslleno[r][c].o.animate({
-                    opacity: 0
-                }, slow);
+                    opacity: 100
+                }, 1000);
             }
         }
     }
