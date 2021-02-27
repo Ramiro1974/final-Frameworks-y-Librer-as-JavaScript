@@ -25,16 +25,18 @@ $(".btn-reinicio").click(function() {
         duration: '2m',
         format: '%M:%S',
         callback: function() {
-            cambioPantalla();
+            $(".panel-tablero").remove();
             //alert('Time up!');
+            $(".panel-score").removeAttr("with");
+            $(".panel-score").css("with", "100%");
             $('#timer').timer('reset');
         }
     });
 });
 
 function cambioPantalla() {
-    $(".panel-score").attr("display", "none");
-    alert('Time up!');
+    $(".panel-score").remove(function() {});
+
 }
 
 
