@@ -34,18 +34,6 @@ $(".btn-reinicio").click(function() {
     });
 });
 
-function cambioPantalla() {
-    $(".panel-score").remove(function() {});
-
-}
-
-
-
-
-
-
-
-
 function candy(fil, colum, obj, src) {
     return {
         fil: r,
